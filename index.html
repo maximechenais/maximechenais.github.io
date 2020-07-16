@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/typedjs/typed.css">
+
+    <title>Maxime Chenais</title>
+</head>
+<body>
+    <!-- HOME PAGE -->
+    <div class="home-background" id="haut">
+        <div class="welcome-container">
+            <div class="welcome-name">Bienvenue, je m'appelle<br>
+                    <span id="typed"></span>
+            </div>
+        </div>
+        <div class="function-container">
+            <div class="function-name">VOTRE NOUVEAU <strong id="function">DÉVELOPPEUR FRONT END</strong></strong></div>
+        </div>
+    </div>
+    <!-- ABOUT -->
+    <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+    <div class="about-background">
+        <div class="about-container">
+            <div class="about-text">POURQUOI VOUS DEVRIEZ ME CHOISIR ?</div>
+        </div>
+        <div class="video-container">
+            <div class="about-video">
+                <video controls width="700" src="videos/Presentation_Maxime.mp4" id='video'></video>
+            </div>
+        </div>
+            
+    </div>
+    <!-- SKILLS -->
+    <div class="skills-background">
+        <div class="skills-title">COMPÉTENCES</div>
+        <div class="technology-container">
+            <div class="technology-text">Technologies</div>
+            <div class="technology-logo-container">
+                <div class="technology-logo">
+                    <img id="html" src="images/html_svg.svg" alt="html">
+                    <img id="css" src="images/css_svg.svg" alt="css">
+                    <img id="javascript" src="images/javascript_svg.png" alt="javascript">
+                    <img id="ruby" src="images/rails_svg.png" alt="rails">
+                </div>
+            </div>
+        </div>
+        <div class="version-container">
+            <div class="version-text">Versionning & Collaboration</div>
+            <div class="version-logo">
+                <img id="git" src="images/git_svg.png" alt="git">
+                <img id="github" src="images/github_svg.png" alt="github">
+                <img id="zoom" src="images/zoom_svg.png" alt="zoom">
+                <img id="slack" src="images/slack_svg.svg" alt="slack">
+            </div>
+        </div>
+    </div>
+    <!-- PORTFOLIO -->
+    <div class="portfolio-background">
+        <div class="portfolio-title">PORTFOLIO</div>
+        <div class="portfolio-video-title-container">
+            <div class="video-title-1">Lits réanimation</div>
+            <div class="video-title-2">My Orchestraa</div>
+        </div>
+        <div class="portfolio-video-container">
+            <div class="video-1"><video controls width="600" src="videos/litsreanimation.mov"></video></div>
+            <div class="video-2"><video controls width="600" src="videos/myorchestraa.mov"></video></div>
+        </div>
+        <div class="portfolio-legend-container">
+            <div class="video-1-legend">Création d'une application web pour recenser les lits disponibles
+                 pour les serivces de réanimation des hôpitaux dans le cadre du Covid19</div>
+            <div class="video-2-legend">Création d'une application web, dédiée aux chefs d'orchestre, 
+                pour l'organisation d'orchestres musicaux dans le cadre du projet final de la formation du Wagon</div>
+        </div>
+        <div class="portfolio-complement-container">
+            <div class="portfolio-complement"><strong>Projets non diffusables :</strong> Application web 
+                pour la gestion d'activité d'un professionnel du BTP / Réalisation d'un site vitrine pour une 
+                startup de la foodtech lors du startup weekend Kokotte à Nantes.</div>
+        </div>
+    </div>
+    <!-- CONTACT -->
+    <div class="contact-background">
+        <div class="contact-title">RETROUVEZ-MOI</div>
+        <div class="contact-link-container">
+            <div class="mail-container">
+                <img src="images/mail_svg.svg" alt="mail">
+                <p class="max-email">maxime.chenais@gmail.com</p>
+            </div>
+            <a href="https://www.linkedin.com/in/maxime-chenais-47088b112/" target="_blank" style="text-decoration: none;">
+                <div class="linkedin-container">
+                    <img src="images/linkedin.svg" alt="linkedin">
+                    <p class="max-linkedin">Linkedin</p>
+                </div>
+            </a>
+            <a href="https://github.com/maximechenais" target="_blank" style="text-decoration: none;">
+                <div class="github-container">
+                    <img src="images/github_svg.svg" alt="github>">
+                    <p class="max-github">Github</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/channel/UCc1DX1l-nEzAyjpte1I9iBw" target="_blank" style="text-decoration: none;">
+                <div class="youtube-container">
+                    <img src="images/youtube.svg" alt="linkedin">
+                    <p class="max-youtube">Sur ma chaîne "Max Le Codeur"</p>
+                </div>
+            </a>
+        </div>
+        <div class="footer">Made with pur ❤️ - <a href="file:///Users/maximechenais/Desktop/Maxime/MON_SITE/index.html" style="text-decoration: none;">Maxime Chenais</a> - 2020 </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        let typed = new Typed('#typed', {
+            strings: [
+                "<span style='color:#F8033E'>Groot ?</span>",
+                "<span style='color:#F8033E'>Teuse ?</span>",
+                "<span style='color:#F8033E'>Maxime Chenais !</span>"
+            ],
+        typeSpeed: 100,
+        loop: true,
+        autoInsertCss: true,
+        showCursor:true,
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          window.onscroll = function(ev) {
+            document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+          };
+        });
+        </script>
+</body>
+</html>
