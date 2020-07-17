@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" media="screen and (max-width: 812px)" href="small_screen_style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
@@ -12,6 +13,7 @@
     <title>Maxime Chenais</title>
 </head>
 <body>
+
     <!-- HOME PAGE -->
     <div class="home-background" id="haut">
         <div class="welcome-container">
@@ -22,6 +24,9 @@
         <div class="function-container">
             <div class="function-name">VOTRE NOUVEAU <strong id="function">DÉVELOPPEUR FRONT END</strong></strong></div>
         </div>
+        <div class="scroll">
+            <div class="scroll-arrow">Scroll vers le bas</div>
+        </div>
     </div>
     <!-- ABOUT -->
     <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
@@ -29,13 +34,16 @@
         <div class="about-container">
             <div class="about-text">POURQUOI VOUS DEVRIEZ ME CHOISIR ?</div>
         </div>
+        <div class="scribble">
+            <div class="scribble-arrow">arrow scribble</div>
+        </div>
         <div class="video-container">
             <div class="about-video">
                 <video controls width="700" src="videos/Presentation_Maxime.mp4" id='video'></video>
             </div>
         </div>
-            
     </div>
+
     <!-- SKILLS -->
     <div class="skills-background">
         <div class="skills-title">COMPÉTENCES</div>
@@ -60,6 +68,7 @@
             </div>
         </div>
     </div>
+
     <!-- PORTFOLIO -->
     <div class="portfolio-background">
         <div class="portfolio-title">PORTFOLIO</div>
@@ -83,6 +92,7 @@
                 startup de la foodtech lors du startup weekend Kokotte à Nantes.</div>
         </div>
     </div>
+
     <!-- CONTACT -->
     <div class="contact-background">
         <div class="contact-title">RETROUVEZ-MOI</div>
@@ -110,8 +120,10 @@
                 </div>
             </a>
         </div>
-        <div class="footer">Made with pur ❤️ - <a href="https://maximechenais.github.io/" style="text-decoration: none;">Maxime Chenais</a> - 2020 </div>
+        <div class="footer">Made with pur ❤️ - <a href="file:///Users/maximechenais/Desktop/Maxime/MON_SITE/index.html" style="text-decoration: none;">Maxime Chenais</a> - 2020 </div>
     </div>
+
+    <!-- JAVASCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script>
         let typed = new Typed('#typed', {
