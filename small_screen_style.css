@@ -40,6 +40,7 @@
     }
     .scroll-arrow {
         content: url('images/scrolldown.png');
+        opacity: 1;
         width: 50px;
     }
 
@@ -88,6 +89,7 @@
     }
     .scribble-arrow {
         content: url('images/arrowscribble.png');
+        opacity: 1;
         width: 150px;
         transform: rotate(45deg);
         margin-top: 70px;
