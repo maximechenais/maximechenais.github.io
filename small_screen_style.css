@@ -1,0 +1,172 @@
+/* MOBILE SCREEN */
+
+@media screen and (max-width: 812px) {
+    /* BACKGROUND */
+    .home-background, .about-background, .portfolio-background {
+        width: 100%;
+        height: 750px;
+    }
+    .skills-background {
+        height: 1000px;
+    }
+    /* HOME PAGE */
+    .welcome-container {
+        padding: 50px;
+        justify-content: center;
+    }
+    .welcome-name {
+        font-size: 35px;
+        text-align: center;
+        word-wrap: break-word;
+    }
+    .function-container {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .function-name {
+        content: url('images/laptopmobile.png');
+        width: 400px;
+        height: 200px;
+        text-align: center;
+    }
+    .scroll {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 170px;
+    }
+    .scroll-arrow {
+        content: url('images/scrolldown.png');
+        width: 50px;
+    }
+
+    .scroll-arrow img{
+        width: 80px;
+        height: 80px;
+        text-align: center;
+    }
+    
+    #function {
+        color: #F8033E;
+    }
+
+    /* ABOUT ME */
+    
+    .about-container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-text {
+        background: -webkit-linear-gradient(to right, #150941, #F8033E);  
+        background: linear-gradient(to right, #150941, #F8033E);
+        border-radius: 50px;
+        color: #ffffff;
+        font-size: 30px;
+        margin: 20px;
+        padding-left: 70px;
+        padding-right: 70px;
+        padding: 20px;
+    }
+    .about-video {
+        margin-top: 50px;
+        padding: 30px;
+
+    }
+    #video {
+        width: 350px;
+        text-align: center;
+    }
+    .scribble {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 20px; */
+    }
+    .scribble-arrow {
+        content: url('images/arrowscribble.png');
+        width: 150px;
+        transform: rotate(45deg);
+        margin-top: 70px;
+    }
+
+    /* SKILLS */
+
+    .skills-title {
+        background: -webkit-linear-gradient(to right, #150941, #F8033E);  
+        background: linear-gradient(to right, #150941, #F8033E);
+        border-radius: 50px;
+        color: #ffffff;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 70px;
+        padding-right: 70px;
+        padding: 20px;
+    }
+    .technology-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-left: 0px;
+    }
+    .technology-text {
+        display: none;
+    }
+    .technology-logo {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 40px;
+        align-items: center;
+        box-shadow: 05 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
+    }
+    .technology-logo img {
+        width: 50px;
+        height: 50px;
+    }
+    .version-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-right: 0px;
+        /* padding:5; */
+    }
+    .version-text {
+        display: none;
+    }
+    .version-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        margin-top: 10px;
+        align-items: center;
+        box-shadow: 05 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
+    }
+    .version-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* PORTFOLIO */
+    .portfolio-title {
+        background: -webkit-linear-gradient(to right, #150941, #F8033E);  
+        background: linear-gradient(to right, #150941, #F8033E);
+        border-radius: 50px;
+        color: #ffffff;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 70px;
+        padding-right: 70px;
+        padding: 20px;
+    }
+}
