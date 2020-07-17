@@ -47,6 +47,9 @@ a#cRetour{
     bottom:20px;
     opacity:1;
   }
+    .scroll-arrow, .scribble-arrow {
+      opacity: 0;
+  }
 /* BACKGROUND */
 .home-background, .about-background, .skills-background, .portfolio-background, .contact-background {
     background-image: url('images/Site_background/1.png');
