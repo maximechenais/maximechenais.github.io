@@ -7,14 +7,7 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-.hr {
-    background-color: #150941;
-    display: block;
-    height: 5px;
-    border: none;
-    margin-left: 300px;
-    margin-right: 50px;
-}
+
 /* SCROLL ARROW */
 a#cRetour{
     border-radius:3px;
@@ -47,17 +40,16 @@ a#cRetour{
     bottom:20px;
     opacity:1;
   }
-    .scroll-arrow, .scribble-arrow {
+  .scroll-arrow, .scribble-arrow {
       opacity: 0;
   }
 /* BACKGROUND */
 .home-background, .about-background, .skills-background, .portfolio-background, .contact-background {
     background-image: url('images/Site_background/1.png');
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
-    width: 100%;
+    /* width: 100%; */
     height: 710px;
-    display: block;
 }
 .about-background {
     background-image: url('images/Site_background/2.png');
@@ -67,6 +59,7 @@ a#cRetour{
 }
 .portfolio-background {
     background-image: url('images/Site_background/4.png');
+    height: 950px;
 }
 .contact-background {
     background-image: url('images/Site_background/5.png');
@@ -242,37 +235,39 @@ a#cRetour{
     font-weight: bolder;
     padding: 60px;
 }
-.portfolio-video-title-container {
+.portfolio-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
-    font-size: 30px;
-    color: #150941;
-    padding-bottom: 20px;
+    align-items: center;
+    margin-top: 50px;
 }
-.portfolio-video-container {
+.litsrea-container, .myorchestraa-container {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
 }
-.portfolio-video-container video {
-    border-radius: 5px;
-}
-.portfolio-legend-container {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-}
-.video-1, .video-2 {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-.video-1-legend, .video-2-legend {
-    width: 500px;
-    word-wrap: break-word;
+.litsrea-title, .myorchestraa-title {
     text-align: center;
-    padding-top: 10px;
     color: #150941;
-    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 40px;
+}
+.litsrea-legend, .myorchestraa-legend {
+    text-align: center;
+    color: #150941;
+    padding: 20px;
+}
+.litsrea-video-container, .myorchestraa-video-container {
+    display: flex;
+    justify-content: center;
+}
+#litsrea-video, #myorchestraa-video {
+    width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .portfolio-complement-container {
     display: flex;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px)" media="screen and (max-width: 812px)" href="small_screen_style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" media="screen and (max-width: 600px)" href="small_screen_style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
@@ -72,19 +72,33 @@
     <!-- PORTFOLIO -->
     <div class="portfolio-background">
         <div class="portfolio-title">PORTFOLIO</div>
-        <div class="portfolio-video-title-container">
-            <div class="video-title-1">Lits réanimation</div>
-            <div class="video-title-2">My Orchestraa</div>
-        </div>
-        <div class="portfolio-video-container">
-            <div class="video-1"><video controls width="600" src="videos/litsreanimation.mov"></video></div>
-            <div class="video-2"><video controls width="600" src="videos/myorchestraa.mov"></video></div>
-        </div>
-        <div class="portfolio-legend-container">
-            <div class="video-1-legend">Création d'une application web pour recenser les lits disponibles
-                 pour les serivces de réanimation des hôpitaux dans le cadre du Covid19</div>
-            <div class="video-2-legend">Création d'une application web, dédiée aux chefs d'orchestre, 
-                pour l'organisation d'orchestres musicaux dans le cadre du projet final de la formation du Wagon</div>
+        <div class="portfolio-container">
+            <div class="listrea-container">
+                <div class="litsrea-title">
+                    <h2>Lits réanimation</h2>
+                </div>
+                <div class="litsrea-video-container">
+                    <video controls src="videos/litsreanimation.mov" id="litsrea-video"></video>
+                </div>
+                <div class="litsrea-legend">
+                    <p>Création d'une application web pour recenser les lits disponibles pour les services de réanimation <br>
+                        des hôpitaux dans le cadre du covid19
+                    </p>
+                </div>
+            </div>
+            <div class="myorchestraa-container">
+                <div class="myorchestraa-title">
+                    <h2>My Orchestraa</h2>
+                </div>
+                <div class="myorchestraa-video-container">
+                    <video controls src="videos/myorchestraa.mov" id="myorchestraa-video"></video>
+                </div>
+                <div class="myorchestraa-legend">
+                    <p>Création d'une application web dédiée aux chefs d'orchestre pour l'organisation d'orchestres musicaux <br>
+                        dans le cadre du projet final du Wagon
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="portfolio-complement-container">
             <div class="portfolio-complement"><strong>Projets non diffusables :</strong> Application web 
@@ -97,10 +111,12 @@
     <div class="contact-background">
         <div class="contact-title">RETROUVEZ-MOI</div>
         <div class="contact-link-container">
-            <div class="mail-container">
-                <img src="images/mail_svg.svg" alt="mail">
-                <p class="max-email">maxime.chenais@gmail.com</p>
-            </div>
+            <a href="mailto:maxime.chenais@gmail.com">
+                <div class="mail-container">
+                    <img src="images/mail_svg.svg" alt="mail">
+                    <p class="max-email">maxime.chenais@gmail.com</p>
+                </div>
+            </a>
             <a href="https://www.linkedin.com/in/maxime-chenais-47088b112/" target="_blank" style="text-decoration: none;">
                 <div class="linkedin-container">
                     <img src="images/linkedin.svg" alt="linkedin">
@@ -120,6 +136,8 @@
                 </div>
             </a>
         </div>
+
+    <!-- FOOTER -->
         <div class="footer">Made with pur ❤️ - <a href="file:///Users/maximechenais/Desktop/Maxime/MON_SITE/index.html" style="text-decoration: none;">Maxime Chenais</a> - 2020 </div>
     </div>
 
